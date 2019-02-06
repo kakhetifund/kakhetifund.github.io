@@ -1,0 +1,76 @@
+---
+layout: default
+title: KYF
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">Kakheti Youth Foundation</h1>
+				<p class="editable">KYF was established in 2013, and its is a non-profit youth organization independent of all political affiliation and based on philosophy for and with rural Youth.</p>
+				<div class="button">
+					<a href="https://www.facebook.com/kakhetiyouth">Our Facebook</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img src="/images/sheep.jpg" alt="Sheep">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">We work in rural areas with youth</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable">Participation</h3>
+			<p class="editable"> Assist the active participation of Georgian youth</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable">Civil society</h3>
+			<p class="editable">Support establishment of healthy civil society</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable">Representation</h3>
+			<p class="editable">Assure youth representation all levels</p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="/images/sheep2.jpg" alt="Sheep">
+		</div>
+		<div>
+
+			<p class="editable">KYF strives to increase youth participation, support socially disadvantage youth in personal development and acquiring necessary job search skills, develop intellectual abilities and professional skills of youth, involve youth in volunteer work, form civil society through the youth movement, ensure youth participation in local and regional life, seeks for rural tourism promotion, and develop mutual relationships.</p>
+		</div>
+	</div>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">KYF</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
